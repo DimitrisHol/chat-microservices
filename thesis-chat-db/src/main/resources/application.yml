@@ -1,0 +1,17 @@
+app:
+  datasource:
+    jdbcUrl: jdbc:postgresql://localhost:5432/thesischat
+    username: postgres
+    password: password
+    poolsize: 30 # How many active connections running concurrently
+
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+server:
+  port: 8500
+spring:
+  application:
+    name: thesis-database

@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pain is Eternal</title>
+     <link rel="stylesheet" href="http://localhost:8762/chat/style.css">
+<!--    <link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<!-- Main Container class -->
+<div class = "container">
+
+    <!-- User Login -->
+    <div class = "container-login">
+        <h3>Please enter your name and the topic</h3>
+        <form id = "usernameForm" name = "usernameForm" >
+            <input class = "container-login-item" type="text" id= "name" placeholder="Username">
+            <input class = "container-login-item" type="text" id= "topic" placeholder="Topic">
+            <button class = "container-login-item btn btn-light" type ="submit">Join </button>
+        </form>
+    </div>
+
+    <!-- Chat area -->
+    <div class = "container-chat-area">
+
+        <!-- Active Users -->
+        <div class="container-active-users">
+            <h5>Active Users</h3>
+                <ul id = "active-users-list" class = "list-group list-group-flush">
+
+                </ul>
+
+        </div>
+        <!-- Chat Box (chat + user input) -->
+        <div class = "container-chat-box">
+
+            <!-- Chat -->
+            <div class = "container-chat">
+                <ul class = "container-chat-list list-group list-group-flush">
+
+                </ul>
+
+            </div>
+
+            <!-- User input -->
+            <div>
+                <form class = "container-send" id = "messageForm" name = "messageForm">
+                    <input  class="form-control" type="text" id= "message" placeholder="Type a message">
+                    <button class =" btn btn-light" type ="submit ">Send </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <script src="http://localhost:8762/chat/app.js"></script>
+<!--<script src="newjs.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,120 @@
+.container {
+    display :flex;
+    flex-direction : column;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.container-login{
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: blue; */
+    margin: 10px;
+
+    background-color:#fff;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding: .375rem .75rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+
+
+}
+
+.container-login-item {
+    align-self: center;
+    width: 300px;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .75rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color:#fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+
+
+}
+
+.container-chat-area {
+    width: 600px;
+    height: 600px;
+
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:100px;
+
+
+}
+
+.container-active-users{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color:#fff;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding: .375rem .75rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+
+}
+
+.container-chat-box{
+
+    background-color: #f6f6f6;
+    display:flex;
+    overflow :auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding-right: 50px;
+    padding-left: 10px;
+
+}
+
+
+
+.container-send {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.own-message{
+
+    color : #2d628f;
+    font: bold;
+    background: #cdeafc;
+    margin:3px;
+    padding :3px;
+    border: 1px solid #ced4da;
+    border-radius: .50rem;
+    text-align: right;
+}
+
+.other-message{
+
+    color : #3c3c3c;
+    background: #e8e8e8;
+    margin:3px;
+    padding :3px;
+    border: 1px solid #ced4da;
+    border-radius: .50rem;
+    text-align: left;
+}
+
+
